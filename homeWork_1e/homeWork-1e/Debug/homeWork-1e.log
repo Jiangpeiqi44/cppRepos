@@ -1,0 +1,2 @@
+﻿  homeWork-1e.cpp
+C:\Users\13607\source\repos\homeWork-1e\homeWork-1e\homeWork-1e.cpp(42,1): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "pch.h"”?

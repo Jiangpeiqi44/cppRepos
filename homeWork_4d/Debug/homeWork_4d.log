@@ -1,0 +1,4 @@
+﻿  homeWork_4d.cpp
+C:\Users\13607\source\repos\homeWork_4d\homeWork_4d.cpp(62,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\13607\source\repos\homeWork_4d\homeWork_4d.cpp(67,23): warning C4018: “<”: 有符号/无符号不匹配
+  homeWork_4d.vcxproj -> C:\Users\13607\source\repos\homeWork_4d\Debug\homeWork_4d.exe

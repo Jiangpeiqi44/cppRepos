@@ -1,0 +1,5 @@
+﻿  homeWork_4a.cpp
+C:\Users\13607\source\repos\homeWork_4a\homeWork_4a.cpp(8,14): warning C4101: “vc”: 未引用的局部变量
+C:\Users\13607\source\repos\homeWork_4a\homeWork_4a.cpp(8,10): warning C4101: “vb”: 未引用的局部变量
+C:\Users\13607\source\repos\homeWork_4a\homeWork_4a.cpp(8,6): warning C4101: “va”: 未引用的局部变量
+  homeWork_4a.vcxproj -> C:\Users\13607\source\repos\homeWork_4a\Debug\homeWork_4a.exe

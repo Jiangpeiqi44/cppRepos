@@ -1,0 +1,5 @@
+﻿  homeWork_2d.cpp
+C:\Users\13607\source\repos\homeWork_2d\homeWork_2d.cpp(7,9): error C2440: “初始化”: 无法从“std::basic_ostream<char,std::char_traits<char>>”转换为“int”
+C:\Users\13607\source\repos\homeWork_2d\homeWork_2d.cpp(44,1): message : 原因如下: 无法从“std::basic_ostream<char,std::char_traits<char>>”转换为“int”
+C:\Users\13607\source\repos\homeWork_2d\homeWork_2d.cpp(42,1): message : 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+C:\Users\13607\source\repos\homeWork_2d\homeWork_2d.cpp(56,1): fatal error C1004: 发现意外的文件尾

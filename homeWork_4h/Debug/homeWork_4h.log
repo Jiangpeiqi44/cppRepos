@@ -1,0 +1,4 @@
+﻿  homeWork_4h.cpp
+C:\Users\13607\source\repos\homeWork_4h\homeWork_4h.cpp(20,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\13607\source\repos\homeWork_4h\homeWork_4h.cpp(45,23): warning C4018: “<”: 有符号/无符号不匹配
+  homeWork_4h.vcxproj -> C:\Users\13607\source\repos\homeWork_4h\Debug\homeWork_4h.exe

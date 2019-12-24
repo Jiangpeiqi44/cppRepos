@@ -5,10 +5,10 @@ using namespace std;
 int main()
 {
 	int a, b;
-	cout << "请输入抽奖人数" << endl;
+	cout << "please enter number of candidates" << endl; //gbk
 	cin >> a;
 	cin.get();
-	cout << "请输入中奖人数" << endl;
+	cout << "please enter the number of winners" << endl;
 	cin >> b;
 	cin.get();
 	if (a >= b)

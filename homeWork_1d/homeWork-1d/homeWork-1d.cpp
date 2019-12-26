@@ -2,33 +2,30 @@
 //
 
 #include "pch.h"
+#include <iomanip>
 #include <iostream>
-#include<string>
-#include<iomanip>
+#include <string>
 using namespace std;
 
 int main()
 {
 	string str1;
-	int a[4] = { 10, 3 ,8 ,211 };
-	cout << "10.3.8.211对应的二进制格式IP地址为：" ;
-	cout.setf(ios::hex,ios::basefield);
-	cout<<setfill('0')<<setw(1) << a[0] 
-		<< setfill('0') << setw(2) << a[1] 
-		<< setfill('0') << setw(2) << a[2] 
-		<< setfill('0') << setw(2) << a[3];
+	int a[4] = {10, 3, 8, 211};
+	cout << "10.3.8.211对应的二进制格式IP地址为：";
+	cout.setf(ios::hex, ios::basefield);
+	cout << setfill('0') << setw(1) << a[0]
+		 << setfill('0') << setw(2) << a[1]
+		 << setfill('0') << setw(2) << a[2]
+		 << setfill('0') << setw(2) << a[3];
 
-
-
-
-
+	cin.get();
+	cin.get();
 }
-
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
 // 调试程序: F5 或调试 >“开始调试”菜单
 
-// 入门提示: 
+// 入门提示:
 //   1. 使用解决方案资源管理器窗口添加/管理文件
 //   2. 使用团队资源管理器窗口连接到源代码管理
 //   3. 使用输出窗口查看生成输出和其他消息

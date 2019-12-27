@@ -72,5 +72,5 @@ int main()
 	time = NULL;
 	cin.get();
 	cin.get();
-	return 1;
+	return 0;
 }

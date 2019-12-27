@@ -6,9 +6,10 @@
 using namespace std;
 int main()
 {
-	int t, time(0);
+	int t;
 	cin >> t;
 	int* pt = new int[2*t];
+	int* time = new int[t];
 
 	cin.get();
 	for (size_t i = 0; i < 2*t; i++)
@@ -17,33 +18,34 @@ int main()
 		cin.get();
 	}
 
-	for (size_t i = 0; i < t; i+=2)
+	for (size_t i = 0; i < t; i++)
 	{
-		switch (*(pt +i) >= *(pt + 1 +i))
+		time[i] = 0;
+	}
+	for (size_t i = 0; i < t; i++)
+	{
+			switch (*(pt +2*i) >= *(pt + 1 +2*i))
 		{
 		case 0:
-			for (size_t i = 0; i < t; i++)
-			{
+			
 				do
 				{
-					*(pt + i) = (*(pt + i) << 1);
+					*(pt + 2*i) = (*(pt + 2*i) << 1);
 					cout << "位移1次" << endl;
-					time++;
-				} while ((*(pt + i) != *(pt + i + 1)) && (time <= 16 * t));
-			}
-			delete[]pt;
+					time[i]++;
+				} while ((*(pt + 2*i) != *(pt + 2*i + 1)) && (time[i] <= 16 * t));
+						
 			break;
 		case 1:
-			for (size_t i = 0; i < t; i+=2)
-			{
+			
 				do
 				{
-					*(pt + i+1) = (*(pt + i+1) << 1);
+					*(pt + 2*i+1) = (*(pt + 2 * i+1) << 1);
 					cout << "位移1次" << endl;
-					time++;
-				} while ((*(pt + i) != *(pt + i + 1)) && (time <= 16 * t));
-			}
-			delete[]pt;
+					time[i]++;
+				} while ((*(pt + 2 * i) != *(pt + 2 * i + 1)) && (time[i] <= 16 * t));
+			
+			
 			break;
 		default:
 			cout << "输入有误";
@@ -54,16 +56,28 @@ int main()
 	
 	
 
-	if (time<= 16 * t)
+	
+
+	for (size_t i = 0; i < t; i++)
 	{
-		cout << "均位移成功，总计共" << time << "次";
-	}
-	else
-	{
-		cout << "该组无法通过位移得到！";
+		if (time[i]<=16)
+		{
+			cout << "第" << i+1 << "组位移" << time[i] << "次成功" << endl;
+
+		}
+		else
+		{
+			cout << "第" << i+1 << "组位移失败！" << endl;
+		}
 	}
 
+
+	delete[]time;
+	delete[]pt;
+	pt = NULL;
+	time = NULL;
 	return 1;
+
 
 }
 

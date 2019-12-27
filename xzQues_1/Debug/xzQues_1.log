@@ -1,0 +1,8 @@
+﻿  xzQues_1.cpp
+D:\cppRepos\xzQues_1\xzQues_1.cpp(14,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\cppRepos\xzQues_1\xzQues_1.cpp(20,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\cppRepos\xzQues_1\xzQues_1.cpp(23,3): warning C4144: “>=”: 关系表达式用作 switch 表达式
+D:\cppRepos\xzQues_1\xzQues_1.cpp(25,25): warning C4018: “<”: 有符号/无符号不匹配
+D:\cppRepos\xzQues_1\xzQues_1.cpp(37,25): warning C4018: “<”: 有符号/无符号不匹配
+D:\cppRepos\xzQues_1\xzQues_1.cpp(51,3): warning C4809: 切换语句有多余的“default”标签；给定所有可能的“case”标签
+  xzQues_1.vcxproj -> D:\cppRepos\xzQues_1\Debug\xzQues_1.exe

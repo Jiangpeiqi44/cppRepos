@@ -17,7 +17,7 @@ int main()
 		cin.get();
 	}
 
-	for (size_t i = 0; i < t; i++)
+	for (size_t i = 0; i < t; i+=2)
 	{
 		switch (*(pt +i) >= *(pt + 1 +i))
 		{
@@ -34,7 +34,7 @@ int main()
 			delete[]pt;
 			break;
 		case 1:
-			for (size_t i = 0; i < t; i++)
+			for (size_t i = 0; i < t; i+=2)
 			{
 				do
 				{
@@ -56,11 +56,11 @@ int main()
 
 	if (time<= 16 * t)
 	{
-		cout << "位移成功，共" << time << "次";
+		cout << "均位移成功，总计共" << time << "次";
 	}
 	else
 	{
-		cout << "无法通过位移得到！";
+		cout << "该组无法通过位移得到！";
 	}
 
 	return 1;

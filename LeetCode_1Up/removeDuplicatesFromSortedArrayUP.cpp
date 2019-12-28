@@ -13,15 +13,15 @@ int removeD(int *arry, int len)
             if (arry[i] == arry[i + 1] && arry[i + 1] == arry[i + 2])
             {
                 times++;
-                arry[i] = 7344;
+                arry[i] = -7344;
             }
         }
-    int *temp = malloc(4 * (len - times));
+    int *temp = new int[len - times];
     int j = 0;
-    for (size_t i = 0; i < len - 1; i++)
+    for (size_t i = 0; i < len; i++)
     {
 
-        if (arry[i] != 7344)
+        if (arry[i] != -7344)
         {
             temp[j] = arry[i];
             j++;
@@ -31,7 +31,8 @@ int removeD(int *arry, int len)
     {
         arry[i] = temp[i];
     }
-
+    delete[] temp;
+    temp = NULL;
     return len - times;
 }
 

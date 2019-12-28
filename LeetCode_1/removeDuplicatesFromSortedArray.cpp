@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-#include 'stdlib.h'
-int removeDuplicates(int *arry, int len)
+
+int removeD(int *arry, int len)
 {
     int times = 0;
     if (len == 0 || len == 1)
@@ -15,7 +15,7 @@ int removeDuplicates(int *arry, int len)
                 times++;
             }
         }
-    int *temp = new int(len - times);
+    int *temp = new int[len - times];
     int j = 0;
     for (size_t i = 0; i < len; i++)
     {

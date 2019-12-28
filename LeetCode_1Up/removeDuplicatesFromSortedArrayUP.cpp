@@ -1,26 +1,27 @@
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
-#include 'stdlib.h'
-int removeDuplicates(int *arry, int len)
+int removeD(int *arry, int len)
 {
-    int times = 0;
+
+    int times(0);
     if (len == 0 || len == 1)
         return len;
     else
-        for (size_t i = 0; i < len - 1; i++)
+        for (size_t i = 0; i < len - 2; i++)
         {
-            if (arry[i] == arry[i + 1])
+            if (arry[i] == arry[i + 1] && arry[i + 1] == arry[i + 2])
             {
-                arry[i] = -7344;
                 times++;
+                arry[i] = 7344;
             }
         }
-    int *temp = new int(len - times);
+    int *temp = malloc(4 * (len - times));
     int j = 0;
-    for (size_t i = 0; i < len; i++)
+    for (size_t i = 0; i < len - 1; i++)
     {
 
-        if (arry[i] != -7344)
+        if (arry[i] != 7344)
         {
             temp[j] = arry[i];
             j++;
@@ -30,8 +31,7 @@ int removeDuplicates(int *arry, int len)
     {
         arry[i] = temp[i];
     }
-    delete[] temp;
-    temp = NULL;
+
     return len - times;
 }
 

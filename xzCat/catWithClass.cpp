@@ -56,7 +56,7 @@ void cat::interact()
         if (catName == inputName_)
         {
             int randTimes = random(50);
-            std::cout << "Meow!\nNow keep clicking enter to cuddle your cat!\n";
+            cout << "Meow!\nNow keep clicking enter to cuddle your cat!\n";
             for (size_t i = 1; i < randTimes + 1; i++)
             {
                 if (i <= randTimes / 4)
@@ -118,7 +118,7 @@ void cat::interact()
                 }
                 if (i == randTimes - 1)
                 {
-                    cout << "Almost there !\n";
+                    cout << "\n Almost there !\n";
                     cin.get();
                 }
             }

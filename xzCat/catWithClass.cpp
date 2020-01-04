@@ -146,7 +146,7 @@ void cat::raiseCat(int num, string catBrd_)
              << "Please re-enter!" << endl;
         cin.get();
 
-    } while (ans.length() <= 20);
+    } while (ans.length() <= random(10));
 
     int *meow = new int[num];
     cout << "Congrats! Now your cats are living happily in " << meow << endl
@@ -165,7 +165,7 @@ cat::cat(int catAge_, int catNum_, int love_, double catWeight_, string catName_
     masterName = masterName_;
     cout
         << "Congrats! Now you purchased a " << catBrd << " named " << catName << endl
-        << "Your also have " << catNum - 1 << " other lovely pussy cat!" << endl
+        << "Now you have " << catNum << "  lovely pussy cats!" << endl
         << "Press any key to countinue!" << endl;
 
     cin.get();
@@ -224,7 +224,7 @@ int main()
         cin.get();
         cout << "Choose the corresponding number ahead to countinue !\n"
              << "1. Raise cat" << endl
-             << "2. Inter act with her" << endl
+             << "2. Interact with her" << endl
              << "3. Show your cats' home " << endl
              << "……" << endl;
         cin >> corresNum;

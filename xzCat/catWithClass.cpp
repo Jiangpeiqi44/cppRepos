@@ -2,8 +2,7 @@
 #include <cstdio>
 #include <cstring>
 #include <iostream>
-//#include <windows.h>
-//#include <tchar.h>
+
 #include <ctime>
 #define random(x) rand() % (x)
 using namespace std;
@@ -43,6 +42,8 @@ void catHeart()
     }
 }
 #ifdef WIN_ONLY
+#include <tchar.h>
+#include <windows.h>
 void heart()
 {
     HANDLE o = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -333,10 +334,11 @@ int main()
 
     cat xzCat(catAge, catNum, love, catWeight, catName, brd, masterName);
     int corresNum(0), exitNum(1);
+    cout << "Now you can choose what you want to do with your cat !\nPress enter to continue!";
+    cin.get();
     do
     {
-        cout << "Now you can choose what you want to do with your cat !\nPress enter to continue!";
-        cin.get();
+
         cout << "Choose the corresponding number ahead to countinue !\n"
              << "1. Raise cat" << endl
              << "2. Interact with her" << endl

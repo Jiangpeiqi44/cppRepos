@@ -1,16 +1,17 @@
 #include <cmath>
 #include <cstdio>
 #include <cstring>
-#include <iostream>
-
 #include <ctime>
+#include <iostream>
 #define random(x) rand() % (x)
 using namespace std;
+
 float f(float x, float y, float z)
 {
     float a = x * x + 9.0f / 4.0f * y * y + z * z - 1;
     return a * a * a - x * x * z * z * z - 9.0f / 80.0f * y * y * z * z * z;
 }
+
 float h(float x, float z)
 {
     for (float y = 1.0f; y >= 0.0f; y -= 0.001f)
@@ -18,6 +19,7 @@ float h(float x, float z)
             return y;
     return 0.0f;
 }
+
 void catHeart()
 {
     for (float z = 1.5f; z > -1.5f; z -= 0.05f)
@@ -41,6 +43,7 @@ void catHeart()
         putchar('\n');
     }
 }
+
 #ifdef WIN_ONLY
 #include <tchar.h>
 #include <windows.h>
@@ -96,7 +99,6 @@ enum catBreed
     ragdoll,
     persian,
     bobtail
-
 };
 
 class cat
@@ -118,6 +120,7 @@ public:
     void showHome();
     void stat();
 };
+
 void cat::stat()
 {
     if (catNum > 1)
@@ -132,10 +135,12 @@ void cat::stat()
     cout << catName << " was " << catAge << " years old, and "
          << " weights " << catWeight << " and you have played with her for " << love << " times" << endl;
 }
+
 void cat::showHome()
 {
     cout << "Your cats live happily in " << catHome << " !" << endl;
 }
+
 void cat::getHerBack()
 {
     cout << "Your cats are leaving!\n"
@@ -146,6 +151,7 @@ void cat::getHerBack()
     }
     cout << "I'm sorry……\n";
 }
+
 void cat::interact()
 {
     string inputName_;
@@ -235,6 +241,7 @@ void cat::interact()
     }
     catAge = love / 10;
 }
+
 void cat::raiseCat()
 {
     string ans;
@@ -259,6 +266,7 @@ void cat::raiseCat()
     cin.get();
     catHome = meow;
 }
+
 cat::cat(int catAge_, int catNum_, int love_, double catWeight_, string catName_, int brd, string masterName_)
 {
     catAge = catAge_;
